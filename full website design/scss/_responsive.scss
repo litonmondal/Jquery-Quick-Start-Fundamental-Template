@@ -1,0 +1,231 @@
+// Laptop Screen
+@media only screen and (min-width:768px) and (max-width:1410px) {
+.container{
+  width: 1140px;
+}
+#projects_area{
+    .project_x{
+    grid-column: auto / span 1;
+  }
+  .project_y{
+    grid-row: auto / span 1;
+  }
+  .project_xy{
+    grid-column: auto / span 1;
+    grid-row: auto / span 1;
+  }
+ }
+ #contact_area .contact_info div {
+	padding: 30px 0px;
+   display: flex;
+}
+}
+// Tablet Screen
+@media only screen and (min-width:768px) and (max-width:1199px) {
+.container{
+  width: 96%;
+}
+.social_area ul li {
+	margin-right: 0px;
+  margin-top: 12px;
+}
+ #contact_area .contact_info div {
+	padding: 30px 0px;
+ }
+ #header_area .top_header_area{
+  .container.inner{
+    div{
+      flex-basis: 20%;
+      &:first-child,
+      &:last-child{
+        flex-basis: 35%;
+      }
+    }
+    p{
+      font-size: 13px;
+      text-align: center;
+    }
+    i{
+      display: block;
+    }  
+  }
+ }
+  #hero_area{
+  .inner{
+    flex-direction: column;
+  }
+  .admin_info{
+    flex-basis: 100%;
+    padding: 20px;
+    order: 2;
+  }
+  .admin_image{
+    order: 1;
+    flex-basis: 100%;
+  }
+ }
+ #service_area .child_service {
+	padding: 25px;
+}
+#contact_area{
+  .inner,
+  .contact_info{
+    flex-direction: column;
+  }
+  .contact_info{
+    div{
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    iframe{
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+   }
+  }
+}
+
+// Mobile Screen
+
+@media only screen and (min-width:$small) and (max-width:$medium) {
+  // Header Area Style
+#header_area{
+  .inner{
+    display: block;
+   }
+  // Top Header Area Style
+  .top_header_area{
+   .address, 
+   .phone_nunber, 
+   .email_address{
+    display: none;
+   }
+   .social_area{
+    ul{
+      text-align: center;
+    }
+   }
+    .mobile_bar{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    i{
+      color: $whiteColor;
+      font-size: 25px;
+      cursor: pointer;
+    }
+   }
+  }
+  // Manin Menu Style
+  .main_header{
+  .logo_area{
+     width: 200px;
+    margin:0 auto;
+   } 
+  }
+ }
+ // Hero Area Style
+ #hero_area{
+  .inner{
+    flex-direction: column;
+  }
+  .admin_info{
+    flex-basis: 100%;
+    padding: 20px;
+    order: 2;
+    h2{
+      font-size: 38px;
+    }
+  }
+  .admin_image{
+    order: 1;
+    flex-basis: 100%;
+  }
+ }
+ // About Area Style
+#about_area{
+  .inner{
+    flex-direction: column;
+  }
+  .about_numbers{
+    flex-basis: 100%;
+    .about_child{
+      h4{
+        font-size: 25px;
+      }
+      h6{
+        font-size: 14px;
+        font-weight: $fontWMD;
+      }
+    }
+  }
+  .about_info{
+    flex-basis: 100%;
+    padding: 25px;
+    h3{
+      font-size: 25px;
+    }
+  }
+ }
+
+ // Service Area Style
+ #service_area{
+  .inner{
+    flex-direction: column;
+  }
+  .child_service{
+    margin-bottom: 25px;
+    padding: 20px;
+    i{
+      margin-bottom: 10px;
+    }
+    h4{
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+ }
+
+ // Project Area Style
+ #projects_area{
+  .inner-grid{
+    display: block;
+  }
+  .child_project{
+    margin-bottom: 15px;
+  }
+ }
+
+ // Blog Area Style
+ #blogs_area{
+  .inner{
+    flex-direction: column;
+  }
+  .child_blog{
+    margin-bottom: 25px;
+  }
+ }
+
+ // Contact Are Style
+ #contact_area{
+  .inner,
+  .contact_info{
+    flex-direction: column;
+  }
+  .contact_info{
+    div{
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    iframe{
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+   }
+  }
+}
+
